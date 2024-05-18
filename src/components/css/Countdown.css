@@ -1,0 +1,9 @@
+/* Add a background image class */
+.countdown-section {
+    background-image: url('../../assets/count_down_bg_img.png'); 
+    background-size: cover;
+    background-position: 0 130px;
+    /* height: 50vh; */
+  }
+
+  
