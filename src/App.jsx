@@ -6,7 +6,9 @@ import Countdown from "./components/Countdown"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
+import MeetTheTeamSection from "./components/MeetTheTeamSection"
 import SpeakersSection from "./components/SpeakersSection"
+import SponsorsSection from "./components/SponsorsSection"
 import TicketSection from "./components/TicketSection"
 import VenueSection from "./components/VenueSection"
 
@@ -25,6 +27,8 @@ const App = () => {
       <VenueSection/>
       <TicketSection/>
       <SpeakersSection/>
+      <SponsorsSection/>
+      <MeetTheTeamSection/>
       <Footer/>
     </div>
   )
