@@ -1,7 +1,7 @@
 // import React from 'react'
 
 import About from "./components/About"
-import Agenda from "./components/Agenda"
+// import Agenda from "./components/Agenda"
 import Countdown from "./components/Countdown"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
@@ -22,7 +22,7 @@ const App = () => {
       <Header/>
       <Hero/>
       <About/>
-      <Agenda/>
+      {/* <Agenda/> */}
       <Countdown eventDate={eventDate}/>
       <VenueSection/>
       <TicketSection/>
