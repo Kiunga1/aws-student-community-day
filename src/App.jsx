@@ -5,6 +5,7 @@ import Agenda from "./components/Agenda"
 import Countdown from "./components/Countdown"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
+import SpeakersSection from "./components/SpeakersSection"
 import TicketSection from "./components/TicketSection"
 import VenueSection from "./components/VenueSection"
 
@@ -22,6 +23,7 @@ const App = () => {
       <Countdown eventDate={eventDate}/>
       <VenueSection/>
       <TicketSection/>
+      <SpeakersSection/>
     </div>
   )
 }
