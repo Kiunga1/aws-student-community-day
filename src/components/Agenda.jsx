@@ -11,31 +11,13 @@ const Agenda = () => {
     },
     {
       time: '10:30 am - 11:00 am',
-      sessionTitle: 'Cloud Computing Fundamentals(Beginner Track)',
-      speakers: ['John Doe, AWS Cloud Architect'],
-      description: 'This session provides a fundamental understanding of cloud computing concepts... ',
-    },
-    {
-      time: '9:30 am - 10:30 am',
-      sessionTitle: 'Cloud Computing Fundamentals(Beginner Track)',
+      sessionTitle: 'Cloud Computing Fundamentals (Beginner Track)',
       speakers: ['John Doe, AWS Cloud Architect'],
       description: 'This session provides a fundamental understanding of cloud computing concepts... ',
     },
     {
       time: '10:30 am - 11:00 am',
-      sessionTitle: 'Cloud Computing Fundamentals(Beginner Track)',
-      speakers: ['John Doe, AWS Cloud Architect'],
-      description: 'This session provides a fundamental understanding of cloud computing concepts... ',
-    },
-    {
-      time: '10:30 am - 11:00 am',
-      sessionTitle: 'Cloud Computing Fundamentals(Beginner Track)',
-      speakers: ['John Doe, AWS Cloud Architect'],
-      description: 'This session provides a fundamental understanding of cloud computing concepts... ',
-    },
-    {
-      time: '10:30 am - 11:00 am',
-      sessionTitle: 'Cloud Computing Fundamentals(Beginner Track)',
+      sessionTitle: 'Cloud Computing Fundamentals (Beginner Track)',
       speakers: ['John Doe, AWS Cloud Architect'],
       description: 'This session provides a fundamental understanding of cloud computing concepts... ',
     },
@@ -43,28 +25,48 @@ const Agenda = () => {
   ];
 
   return (
-    <section id='agenda' className='p-10 font-sans'>
+    <section id='agenda' className='p-4 md:p-10 font-sans'>
       <h2 className='text-center text-2xl font-bold mb-8'>Event Agenda</h2>
-      <table className="w-full border-collapse border-none rounded">
-        <thead className="bg-black text-white p-4">
-          <tr>
-            <th className="px-20 py-3">Time</th>
-            <th className="px-4 py-3">Session Title</th>
-            <th className="px-4 py-3">Speaker(s)</th>
-            <th className="px-4 py-3">Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          {agendaData.map((item, index) => (
-            <tr key={index} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-dark'}>
-              <td className="border px-4 py-2 font-semibold">{item.time}</td>
-              <td className="border px-4 py-2">{item.sessionTitle}</td>
-              <td className="border px-4 py-2">{item.speakers.join(', ')}</td>
-              <td className="border px-4 py-2">{item.description}</td>
+      <div className="hidden md:block">
+        <table className="w-full border-collapse border-none rounded">
+          <thead className="bg-black text-white">
+            <tr>
+              <th className="px-4 py-3">Time</th>
+              <th className="px-4 py-3">Session Title</th>
+              <th className="px-4 py-3">Speaker(s)</th>
+              <th className="px-4 py-3">Description</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {agendaData.map((item, index) => (
+              <tr key={index} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-dark'}>
+                <td className="border px-4 py-2 font-semibold">{item.time}</td>
+                <td className="border px-4 py-2">{item.sessionTitle}</td>
+                <td className="border px-4 py-2">{item.speakers.join(', ')}</td>
+                <td className="border px-4 py-2">{item.description}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div className="block md:hidden">
+        {agendaData.map((item, index) => (
+          <div key={index} className={`p-4 mb-4 rounded ${index % 2 === 0 ? 'bg-white' : 'bg-gray-dark'}`}>
+            <div className="mb-2">
+              <span className="font-semibold">Time:</span> {item.time}
+            </div>
+            <div className="mb-2">
+              <span className="font-semibold">Session Title:</span> {item.sessionTitle}
+            </div>
+            <div className="mb-2">
+              <span className="font-semibold">Speaker(s):</span> {item.speakers.join(', ')}
+            </div>
+            <div>
+              <span className="font-semibold">Description:</span> {item.description}
+            </div>
+          </div>
+        ))}
+      </div>
     </section>
   );
 };
