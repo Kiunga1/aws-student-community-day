@@ -3,6 +3,7 @@
 import About from "./components/About"
 import Agenda from "./components/Agenda"
 import Countdown from "./components/Countdown"
+import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import SpeakersSection from "./components/SpeakersSection"
@@ -24,6 +25,7 @@ const App = () => {
       <VenueSection/>
       <TicketSection/>
       <SpeakersSection/>
+      <Footer/>
     </div>
   )
 }
