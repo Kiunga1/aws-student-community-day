@@ -1,4 +1,4 @@
-
+import React from 'react';
 
 const SpeakersSection = () => {
   const speakers = [
@@ -18,7 +18,7 @@ const SpeakersSection = () => {
       name: 'David Kim',
       title: 'Cloud Security Engineer',
       description: 'A cloud security engineer specializing in cloud environments and protecting sensitive data.',
-      image: 'david.png',
+      image: '/path/to/image3.png',
     },
     {
       name: 'Maria Garcia',
@@ -37,27 +37,24 @@ const SpeakersSection = () => {
           <br />
           Meet the Cloud Experts
         </h2>
-        <div className="flex overflow-x-scroll space-x-4 px-4">
-          {speakers.map((speaker, index) => (
-            <div key={index} className="flex-shrink-0 w-80 h-40 bg-white p-4 rounded-lg shadow-lg text-left relative">
-              <img src={speaker.image} alt={speaker.name} className="h-20 w-20 rounded-full mx-auto mb-4 absolute " />
-              <div className='pl-20 mb-6'>
-                <h3 className="text-base font-medium text-black">{speaker.name}</h3>
-                <p className="text-gray-500 font-light text-xs">{speaker.title}</p>
+        <div className="relative">
+          <div className="flex overflow-x-auto space-x-4 px-4">
+            {speakers.map((speaker, index) => (
+              <div key={index} className="flex-shrink-0 w-80 bg-white p-4 rounded-lg shadow-lg text-left relative">
+                <img src={speaker.image} alt={speaker.name} className="h-20 w-20 rounded-full mx-auto mb-4 absolute left-4 top-4" />
+                <div className='pl-24 mb-6'>
+                  <h3 className="text-base font-medium text-black">{speaker.name}</h3>
+                  <p className="text-gray-500 font-light text-xs">{speaker.title}</p>
+                </div>
+                <p className="text-black text-xs font-normal mt-4">{speaker.description}</p>
               </div>
-              
-              <p className="text-black text-xs font-normal">{speaker.description}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
         <div className="flex justify-center mt-8 space-x-2">
-          {/* Pagination dots can be dynamically rendered based on the number of speakers */}
-          <span className="h-3 w-3 bg-gray-300 rounded-full inline-block"></span>
-          <span className="h-3 w-3 bg-yellow-500 rounded-full inline-block"></span>
-          <span className="h-3 w-3 bg-gray-300 rounded-full inline-block"></span>
-          <span className="h-3 w-3 bg-gray-300 rounded-full inline-block"></span>
-          <span className="h-3 w-3 bg-gray-300 rounded-full inline-block"></span>
-          <span className="h-3 w-3 bg-gray-300 rounded-full inline-block"></span>
+          {speakers.map((_, index) => (
+            <span key={index} className={`h-3 w-3 ${index === 1 ? 'bg-yellow-500' : 'bg-gray-300'} rounded-full inline-block`}></span>
+          ))}
         </div>
       </div>
     </section>
