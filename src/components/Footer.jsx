@@ -1,4 +1,4 @@
-import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
+import {  FaLinkedinIn } from 'react-icons/fa';
 import { MdOutlineMail } from "react-icons/md";
 import { RiTwitterXLine } from "react-icons/ri";
 
