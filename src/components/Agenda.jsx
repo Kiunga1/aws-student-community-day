@@ -5,7 +5,7 @@ const Agenda = () => {
   const agendaData = [
     {
       time: '8:30 am - 9:00 am',
-      sessionTitle: 'Welcome & opening remarks',
+      sessionTitle: 'Welcome & Opening Remarks',
       speakers: ['AWS Student Community Kenya Team'],
     },
     {
@@ -15,7 +15,7 @@ const Agenda = () => {
     },
     {
       time: '10:30 am - 11:00 am',
-      sessionTitle: 'Coffee break & networking',
+      sessionTitle: 'Coffee Break & Networking',
       speakers: ['AWS Student Community Kenya Team'],
       // description: 'This session provides a fundamental understanding of cloud computing concepts... ',
     },
@@ -33,13 +33,13 @@ const Agenda = () => {
     },
     {
       time: '2:00 pm - 4:00 pm',
-      sessionTitle: 'Lunch Break',
+      sessionTitle: 'Technical Session',
       speakers: ['AWS Student Community Kenya Team'],
       // description: 'This session provides a fundamental understanding of cloud computing concepts... ',
     },
     {
       time: '4:00 pm - 5:00 pm',
-      sessionTitle: 'Closing and deepracer team',
+      sessionTitle: 'Closing and Deepracer Team',
       speakers: ['AWS Student Community Kenya Team'],
       // description: 'This session provides a fundamental understanding of cloud computing concepts... ',
     },
@@ -53,10 +53,10 @@ const Agenda = () => {
         <table className="w-full border-collapse border-none rounded">
           <thead className="bg-black text-white">
             <tr>
-              <th className="px-4 py-3">Time</th>
-              <th className="px-4 py-3">Session Title</th>
-              <th className="px-4 py-3">Speaker(s)</th>
-              <th className="px-4 py-3">Description</th>
+              <th className="px-4 py-3 text-left">Time</th>
+              <th className="px-4 py-3 text-left">Session Title</th>
+              <th className="px-4 py-3 text-left">Speaker(s)</th>
+              {/* <th className="px-4 py-3">Description</th> */}
             </tr>
           </thead>
           <tbody>
@@ -65,7 +65,7 @@ const Agenda = () => {
                 <td className="border px-4 py-2 font-semibold">{item.time}</td>
                 <td className="border px-4 py-2">{item.sessionTitle}</td>
                 <td className="border px-4 py-2">{item.speakers.join(', ')}</td>
-                <td className="border px-4 py-2">{item.description}</td>
+                {/* <td className="border px-4 py-2">{item.description}</td> */}
               </tr>
             ))}
           </tbody>
