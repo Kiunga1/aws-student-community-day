@@ -5,7 +5,7 @@ import Aws_cloud_clubs from '../assets/aws_cloud_clubs.png';
 
 const About = () => {
   return (
-    <section id='about' className="p-4 md:p-20 bg-gray-light h-auto align-center">
+    <section id='about' className="p-4 mt-6 md:p-20 bg-gray-light h-auto align-center">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
         <div className="grid items-center ">
           <img src={Aws_community_day} alt="AWS Community Day" className="w-full mb-4" />

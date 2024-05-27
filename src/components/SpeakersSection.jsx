@@ -30,7 +30,7 @@ const SpeakersSection = () => {
   ];
 
   return (
-    <section className="p-6 lg:p-20 bg-gray-light font-sans">
+    <section id='speakers' className="p-6 lg:p-20 bg-gray-light font-sans">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl text-black font-sans font-semibold mb-12">
           <span className="text-orange font-semibold text-xl">SPEAKERS</span>

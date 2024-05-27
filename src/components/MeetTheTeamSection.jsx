@@ -5,7 +5,7 @@ import ColincePic from '../assets/colince.png';
 
 const MeetTheTeamSection = () => {
   return (
-    <section className="py-16 bg-gray-light font-sans">
+    <section id='team' className="py-16 bg-gray-light font-sans">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl text-black font-sans font-semibold mb-12">
           <span className="text-orange font-semibold text-xl">TEAM</span>

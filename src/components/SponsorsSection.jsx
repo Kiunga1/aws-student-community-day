@@ -29,7 +29,7 @@ const SponsorsSection = () => {
   };
 
   return (
-    <section className="py-16 bg-gray-100 font-sans">
+    <section id='sponsors' className="py-16 bg-gray-100 font-sans">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl text-black font-sans font-semibold mb-12">
           <span className="text-orange font-semibold text-xl">SPONSORS</span>
