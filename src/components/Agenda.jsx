@@ -4,22 +4,44 @@ const Agenda = () => {
   
   const agendaData = [
     {
+      time: '8:30 am - 9:00 am',
+      sessionTitle: 'Welcome & opening remarks',
+      speakers: ['AWS Student Community Kenya Team'],
+    },
+    {
       time: '9:00 am - 10:30 am',
       sessionTitle: 'Keynotes',
       speakers: ['AWS Student Community Kenya Team'],
-      description: '-',
     },
     {
       time: '10:30 am - 11:00 am',
-      sessionTitle: 'Cloud Computing Fundamentals (Beginner Track)',
-      speakers: ['John Doe, AWS Cloud Architect'],
-      description: 'This session provides a fundamental understanding of cloud computing concepts... ',
+      sessionTitle: 'Coffee break & networking',
+      speakers: ['AWS Student Community Kenya Team'],
+      // description: 'This session provides a fundamental understanding of cloud computing concepts... ',
     },
     {
-      time: '10:30 am - 11:00 am',
-      sessionTitle: 'Cloud Computing Fundamentals (Beginner Track)',
+      time: '11:00 am - 1:00 pm',
+      sessionTitle: 'Technical Session',
       speakers: ['John Doe, AWS Cloud Architect'],
-      description: 'This session provides a fundamental understanding of cloud computing concepts... ',
+      // description: 'This session provides a fundamental understanding of cloud computing concepts... ',
+    },
+    {
+      time: '1:00 pm - 2:00 pm',
+      sessionTitle: 'Lunch Break',
+      speakers: ['AWS Student Community Kenya Team'],
+      // description: 'This session provides a fundamental understanding of cloud computing concepts... ',
+    },
+    {
+      time: '2:00 pm - 4:00 pm',
+      sessionTitle: 'Lunch Break',
+      speakers: ['AWS Student Community Kenya Team'],
+      // description: 'This session provides a fundamental understanding of cloud computing concepts... ',
+    },
+    {
+      time: '4:00 pm - 5:00 pm',
+      sessionTitle: 'Closing and deepracer team',
+      speakers: ['AWS Student Community Kenya Team'],
+      // description: 'This session provides a fundamental understanding of cloud computing concepts... ',
     },
     // Add more agenda items as needed
   ];
