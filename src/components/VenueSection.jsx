@@ -9,7 +9,7 @@ const VenueSection = () => {
           height="450"
           allowFullScreen=""
           loading="lazy"
-          className="border-0 w-full h-96"
+          className="border-2 border-blue w-full h-96"
         ></iframe>
       </div>
       <div className="text-center  mb-6 mt-8">
@@ -18,7 +18,7 @@ const VenueSection = () => {
         <p className="text-gray-black font-sans mb-1">
           The event is happening at a location that fosters creativity and innovation. Mark your calendars and get ready to learn at:
         </p>
-        <p className="text-blue-500 font-bold">
+        <p className="text-teal font-bold">
           Karen Ole Sangale Rd, off Langata Road,
           <br />
            in Madaraka Estate, Nairobi

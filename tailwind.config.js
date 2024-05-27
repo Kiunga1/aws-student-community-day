@@ -19,6 +19,8 @@ export default {
         black: '#232F3E',
         white: '#FFFFFF',
         pink: '#F46EBB',
+        blue: '#005276',
+        teal: '#007FAA',
       },
       fontFamily: {
         sans: ['Work Sans', 'sans-serif'],
