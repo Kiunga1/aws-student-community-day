@@ -4,10 +4,10 @@ import { RiTwitterXLine } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-4 h-24 grid">
+    <footer className="bg-gray-800 text-white py-4 h-24 grid px-2">
       <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center">
         {/* Copyright Section */}
-        <div className="text-md lg:text-xl font-sans font-semibold">
+        <div className="text-sm md:text-xl font-sans font-semibold">
           &copy; {new Date().getFullYear()} AWS Community Day. All rights reserved.
         </div>
 
